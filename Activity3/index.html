@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITK Books</title>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>ITK BOOKS</h1>
+    </header>
+    <section>
+      <h2>Survey Form</h2>
+      <form action="action_page.php" method="post">
+        <!-- First Name -->
+        <label for="fname">First Name:</label><br />
+        <input type="text" id="fname" name="fname" placeholder="John" /><br />
+        <!-- Last Name -->
+        <label for="lname">Last Name:</label><br />
+        <input type="text" id="lname" name="lname" placeholder="Doe" /><br />
+        <!-- Email -->
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="yourmail@example.com"
+        /><br />
+        <div>
+          <!-- Age -->
+          <label for="age">Age:</label><br />
+          <input type="number" name="age" id="age" min="5" max="100" /><br />
+          <!-- Gender -->
+          <label for="gender">Gender:</label><br />
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option></select
+          ><br />
+        </div>
+        <!-- Preference -->
+        <label for="preference">Choose the product you prefer</label><br />
+        <input type="radio" name="fav_product" id="radio_books" value="Books" />
+        <label for="radio_books">Books</label><br />
+        <input
+          type="radio"
+          name="fav_product"
+          id="radio_comics"
+          value="Comics"
+        />
+        <label for="radio_comics">Comics</label><br />
+        <input
+          type="radio"
+          name="fav_product"
+          id="radio_magazines"
+          value="Magazines"
+        />
+        <label for="radio_magazines">Movies</label><br />
+        <!-- Genre -->
+        <label for="genre">Select the genres you like the most</label><br>
+        <label for="check_fantasy">Fantasy</label>
+        <input type="checkbox" name="fantasy" id="check_fantasy" value="fantasy" /><br>
+        <label for="check_drama">Drama</label>
+        <input type="checkbox" name="drama" id="check_drama" value="drama" /><br>
+        <label for="check_comedy">Comedy</label>
+        <input type="checkbox" name="comedy" id="check_comedy" value="comedy"><br>
+        <label for="check_thriller">Thriller</label>
+        <input type="checkbox" name="thriller" id="check_thriller" value="thriller"><br>
+        <!-- Comment -->
+        <label for="suggestion"
+          >Please let us know if there is anything we can do to improve our
+          surveys</label
+        ><br />
+        <textarea
+          name="suggestion"
+          id="suggestion"
+          cols="80"
+          rows="8"
+        ></textarea
+        ><br />
+        <!-- Take another survey -->
+        <label for="repeat">
+          Would you like to take a another survey later?
+        </label>
+        <input type="checkbox" name="repeat" id="check_repeat" value="yes" /><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>
