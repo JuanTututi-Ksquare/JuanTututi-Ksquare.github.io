@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+
+#button1 {
+    font-size: large;
+    color: white;
+    background-color: transparent;
+    padding: 20px 50px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+#button2 {
+    font-size: large;
+    margin-top: 50px;
+    background-color: white;
+    padding: 20px 50px;
+    border: 0px;
+    border-radius: 2px;
+}
