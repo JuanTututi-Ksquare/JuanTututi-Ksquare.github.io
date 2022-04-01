@@ -7,20 +7,38 @@ const ulam = [
 ];
 
 let value = 0;
-let undef = 'Invalid pos';
+let undef = "Invalid pos";
 let result = [];
 
 const check = (arr) => {
-    arr.forEach(element => {
-        y = element[0] - 1;
-        x = element[1] - 1;
-        try {
-            result.push(ulam[y][x]);
-        } catch(error) {
-            result.push(undef);
-        }
-    });
-    console.log(result);
+  arr.forEach((element) => {
+    y = element[0] - 1;
+    x = element[1] - 1;
+    try {
+      if (ulam[y][x] === undefined) {
+        result.push(undef);
+      } else {
+        result.push(ulam[y][x]);
+      }
+    } catch (error) {
+      result.push(undef);
+    }
+  });
+  console.log(result);
+  result = [];
 };
 
-check([[2, 3], [4, 2], [6, 1]]);
+check([
+  [2, 3],
+  [4, 2],
+  [6, 1],
+]);
+check([
+  [4, 4],
+  [3, 1],
+  [5, 2],
+]);
+check([
+  [5, 5],
+  [1, 6],
+]);

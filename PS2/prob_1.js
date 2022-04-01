@@ -26,4 +26,4 @@ const find = (limit, arr) => {
   console.log(missingElement);
 };
 
-find(5, [1, 2, 4]);
+find(9, [3, 5, 2, 8, 4, 6, 7]);
